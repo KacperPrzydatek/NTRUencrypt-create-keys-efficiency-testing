@@ -8,9 +8,9 @@ g = privateKey{4};
 
 %Decryption
 a = multiplicate_poly_mod(f, encryptedMessage, q);
-for i = 1:N
+for i = 1:size(a,2)
     a(i) = a(i) - (q *(a(i)>q/2));
 end
 b = mod(a, p);
-decrypted = multiplicate_poly_mod(b, fp, p);
+decrypted = ExtendFunctionSize(multiplicate_poly_mod(b, fp, p), size(encryptedMessage,2));
 end
