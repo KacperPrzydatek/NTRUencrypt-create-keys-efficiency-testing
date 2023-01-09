@@ -7,7 +7,6 @@ fq = privateKey{3};
 g = privateKey{4};
 
 %Decryption
-% multiplyPlynomialsModDeg(f, encryptedMessage, degOfField);
 a = multiplicate_poly_mod(f, encryptedMessage, q);
 for i = 1:N
     a(i) = a(i) - (q *(a(i)>q/2));

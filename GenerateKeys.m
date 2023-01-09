@@ -20,6 +20,4 @@ disp('Generated private key [f, fp, fq, g]');
 h = mod(p*multiplicate_poly_mod(fq,g,q),q);
 public = {h};
 disp('Generated public key [h]');
-% mod(mod(p*g,q),p)
-% multiplicate_poly_mod(f,h,p)
 end

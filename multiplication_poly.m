@@ -1,6 +1,3 @@
-%
-% multiplication for polynomials
-%
 function out = multiplication_poly(a, b, p)
     sa = size(a, 2);
     sb = size(b, 2);
