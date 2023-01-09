@@ -1,4 +1,4 @@
-function [blockArray] = DivideToBlocks(funct)
+function [blockArray] = SplitFunctToBlocks(funct)
     global N;
     if size(funct)>N
         for i = 1:ceil(size(funct)/N)
