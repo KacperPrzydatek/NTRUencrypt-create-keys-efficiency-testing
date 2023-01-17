@@ -3,7 +3,7 @@ function extendedFunct = ExtendFunctionSize(funct, size)
         extendedFunct = [funct, zeros(1, size-length(funct))];
     elseif(length(funct)>size)
         disp('Function is bigger that declared size');
-return
+        extendedFunct = funct;
     else
         extendedFunct = funct;
     end
